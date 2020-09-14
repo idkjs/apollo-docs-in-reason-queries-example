@@ -1,0 +1,46 @@
+{
+  "name": "apollo-docs-in-reason-queries-example",
+  "version": "1.0.0",
+  "description": "Completed example app for the Apollo Client \"Queries\" docs.",
+  "keywords": [],
+  "homepage": "https://codesandbox.io/s/new",
+  "main": "src/index.js",
+  "dependencies": {
+    "@apollo/client": "3.1.5",
+    "graphql": "15.3.0",
+    "react": "16.13.0",
+    "react-dom": "16.13.0",
+    "react-scripts": "3.4.0",
+    "reason-apollo-client": "^0.0.1-beta.8",
+    "reason-promise": "^1.1.1",
+    "reason-react": "^0.9.1",
+    "subscriptions-transport-ws": "^0.9.18"
+  },
+  "devDependencies": {
+    "@reasonml-community/graphql-ppx": "^1.0.1",
+    "bs-platform": "^8.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "watch": "BS_WATCH_CLEAR=true bsb -make-world -w",
+    "clean": "bsb -clean-world",
+    "webpack": "webpack-dev-server",
+    "schema": "npx get-graphql-schema https://71z1g.sse.codesandbox.io/ -j > graphql_schema.json",
+    "gql": "npx get-graphql-schema https://71z1g.sse.codesandbox.io/graphql > schema.graphql"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
